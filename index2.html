@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2 - Contact Form</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">To-Do List</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h1>Contact Us</h1>
+      <form id="contactForm">
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label>Phone:</label>
+        <input type="text" id="phone" placeholder="Enter your phone number">
+
+        <label>Message:</label>
+        <textarea id="message" placeholder="Type your message"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <p id="formMessage"></p>
+      <h2>To-Do List</h2>
+<input type="text" id="taskInput" placeholder="Add a new task">
+<button onclick="addTask()">Add Task</button>
+<ul id="taskList"></ul>
+<script src="todo.js"></script>
+
+    </main>
+  </div>
+
+  <script src="validate.js"></script>
+</body>
+</html>
